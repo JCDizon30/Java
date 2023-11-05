@@ -1,0 +1,43 @@
+Built - In Packages = Java API has many pre-written classes to help the programmer manage input. dtabase and etc.
+	IMPORTING PACKAGES:
+		*Import Specific Class:
+			import packagename.classname;
+
+		*Import Whole Package:
+			import packagname.*;
+
+java.util.Scanner = A class in the java.util Package thet helps programmers handle inputs from yhe users.
+	USER INPUT SYNTAX:
+		String x;
+		Scanner s = new Scanner(System.in);
+
+		x = s.nextLine();
+
+USER INPUT:
+	* nextLine()
+	* nextInt()
+	* nextShort()
+	* nextLong()
+	* nextByte()
+	* nextBoolean()
+	* nextDouble()
+	* nextFloar()
+
+
+CODE:
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+
+        String x;
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter Name: ");
+        x = s.nextLine();
+
+        System.out.println("You are " + x);
+    }
+}

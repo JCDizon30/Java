@@ -1,0 +1,173 @@
+Conditional Statement 
+= Allows a program to take action based on the Given Condition. It makes our program smarter.
+= Typically, It compares two values so that our program can decide what action should be taken.
+
+==========================================================================
+
+Relation Operators:
+
+      LABEL	           SYMBOL	SYNTAX
+      Equals		     ==		x == y
+    NOT Equals		     !=		x != y
+     Less Than		      <		x < y
+Less Than or Equals	     <=		x <= y
+    Greater Than	      >		x > y
+Greater Than or Equals	     >=		x >= y
+
+==========================================================================
+
+IF Statement = Handles 1 Conditional Expression, It either does SOMETHING or NOTHING.
+
+Syntax:
+if(condition){
+    //Do Everything you want Here
+}
+
+Sample:
+if(age >= 18){
+    System.out.println("You Have Access!");
+}
+
+==========================================================================
+
+IF - ELSE Statement = Handle 2 Conditional Expressions, it either does the first Code Block or the second Code Block.
+
+Syntax:
+if(condition){
+    //Do Everything you want Here
+}else{
+    //Do Everything you want Here
+}
+
+Sample#1:
+if(age >= 18){
+    System.out.println("You Have Access!");
+}else{
+    System.out.println("Access Denied");
+}
+
+Sample#2:
+package javaTutorial;
+import java.util.*;
+
+public class ConditionalStatement {
+    
+	public static void main(String[] args) {
+		
+		Scanner x = new Scanner(System.in);
+		
+		System.out.print("Enter age: ");
+		int age = x.nextInt();
+		
+		if(age >= 18){
+			System.out.println("You Have Access!!");
+		}else{
+			System.out.print("Access Denied");
+		}
+	}
+
+}
+
+==========================================================================
+
+IF - ELSE IF - ELSE Statement = Handles 3 or More Conditional Expressions, The possibility of this Statements are limitless it will run a certain code block based on the condition.  
+
+Syntax:
+if(condition){
+    //Do Everything you want Here
+}else if(condition){
+    //Do Everything you want Here
+}else{
+    //Do Everything you want Here
+}  
+
+Sample:
+if(age >= 18){
+    System.out.println("You Have Access!!");
+}else if(age >= 13){
+    System.out.println("You Need Parent Consent");
+}else{
+    System.out.println("Access Denied");
+}
+
+Sample#2:
+//Applicable in One Line Print Statement
+if(age >= 18) System.out.println("You Have Access!!");
+else if(age >= 13) System.out.println("You Need Parent Consent");
+else System.out.println("Access Denied");
+
+==========================================================================
+
+NESTED Conditional Statement 
+= A Connditional statement within a Conditional Statement.
+= PS: The Nexted Conditional Statement can e any ype of Conditional Statement.
+
+Syntax:
+if(conditions){
+    if(condition){
+       //Do Anything You want Here
+    }
+}
+
+
+Sample#1:
+package javaTutorial;
+import java.util.*;
+
+public class ConditionalStatement {
+    
+	public static void main(String[] args) {
+		
+		Scanner x = new Scanner(System.in);
+		
+		System.out.print("Enter age: ");
+		int age = x.nextInt();
+		boolean isVerified = false;
+		
+		//Read this first 
+		if(age >= 18){
+			System.out.println("You Have Access!!");
+
+			//Then there going to read this blocks of code if it is true
+			if(isVerified) {
+				System.out.println("Qualified");
+			}else {
+				System.out.println("Not Qualifies");
+			}
+
+		//If the IF Statement is false, there going to skip 
+			//the all Blocks of codes of IF statement at the Top.
+		}else{
+			System.out.println("Access Denied");
+		}	
+    }
+}
+
+
+Sample#2:
+//Applicable in One Line Print Statement
+package javaTutorial;
+import java.util.*;
+
+public class ConditionalStatement {
+    
+	public static void main(String[] args) {
+		
+		Scanner x = new Scanner(System.in);
+		
+		System.out.print("Enter age: ");
+		int age = x.nextInt();
+		boolean isVerified = false;
+		
+		if(age >= 18){
+			System.out.println("You Have Access!!");
+			if(isVerified) System.out.println("Qualified");
+			else System.out.println("Not Qualifies");
+		}else System.out.println("Access Denied");	
+    }
+}
+
+==========================================================================
+
+
+   

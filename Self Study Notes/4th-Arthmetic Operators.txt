@@ -1,0 +1,57 @@
+ARITMETIC OPERATORS
+Symbol		Operation	Result		Usage
+  +		Addition	Sum		x + y
+  -		Subtraction	Difference	x - y
+  *		Multiolication	Product		x * y
+  /		Division	Quotient	x / y
+  %		Modulus		Remainder	x % y
+  ++		Increment	Add 1		X++
+  --		Decrement	Subtract 1	x--
+ 
+
+SAMPLE CODES:
+
+public class App {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 4;
+        float a = 3;
+        float b = 8;
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
+        System.out.println(b / a);
+        System.out.println(x % y);
+
+        x++;
+        System.out.println(x);
+        y--;
+        System.out.println(y);
+    }
+}
+
+
+
+CHALLENGE CODE:
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+
+        int x;
+        int y;
+
+        Scanner classname = new Scanner(System.in);
+
+        System.out.print("First Number ");
+        x = classname.nextInt();
+
+        System.out.print("Second Number ");
+        y = classname.nextInt();
+
+        int Result = x * y;
+
+        System.out.println("Result of: " + x + " * " + y + " = " + Result);
+    }
+}

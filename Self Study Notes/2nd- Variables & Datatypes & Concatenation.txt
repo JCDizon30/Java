@@ -1,0 +1,102 @@
+Variables - are used to store up temporary data to be used in our program's runtime.
+Data Type - The type of Data inside our variable.
+		Data Types
+	*Characters - char (Holds a Single Charater)
+	*String - String (Holds a Set of Characters/Texts)
+	*Boolean - boolean (Holds True or False)
+	*Integers - byte (-128 to 127)
+		  - short (-32768 to 32767)
+		  - int (-2,147,483,648 to 2,147,483,647)
+		  - long (9,223,372,036,854,775,808 to 9,223,372,036,854,755,807)
+	* Floating Point - float (3.43-038 to 3.4e+038)
+		  -double (1.7e-308 to 1.7e+038)
+
+Identifiers - it is the Name of the Variable that the programmer indicated it is used to Read and Write to the variable.
+		Rules of Indentifiers
+	* You cannot use any SPECIAL CHARACTERS other the underscore(_).
+	* You cannot use Whitespaces.
+	* You cannot use NUMBER ALONE.
+	* You can USE NUMBERS but WITH LETTERS.
+
+DECLARING VARIABLES:
+	Syntax:
+		datatype identifier;
+		datatype identifier = value
+	Example:
+		string name;
+		string nameStudent = "John Carlo";
+
+
+REASSIGNING VARIABLES:
+	Syntax:
+		indentifier = value;
+
+
+System.out.println();
+	*Used to display something in the console.
+	*We can display a variable's value by indicating its identifier inside the 	parentheses.
+
+Concatenation - The process of joining Stringd together with the plus operation.
+	      - You can concatenate INSIDE a Variable or on the Print Statement.
+	*Concatenation:
+		"Hello" + "World = HelloWorld
+		"2" + "3" = 23
+		'a' + "b" = ab
+		 2 + "3" = 23
+
+	*NOT Concatenation:
+ 		2 + 3 = 5
+	       'a' + 3 = 
+
+
+PRACTICE CODE:
+
+public class App {
+    public static void main(String[] args) {
+
+        // Declaring Varibles
+        char section = 'A';
+        String studentName = "John";
+        boolean isTall = false;
+        int num = 5;
+        float grade = 95.5f;
+        double grade1 = 93.25;
+
+        // Print out Variables
+        System.out.println(section);
+        System.out.println(studentName);
+        System.out.println(isTall);
+        System.out.println(num);
+        System.out.println(grade);
+        System.out.println(grade1 + "\n");
+
+        // Reassigning Variables
+        section = 'B';
+        studentName = "Carlo";
+        isTall = true;
+        num = 10;
+
+        // Print out The Changes Variables
+        System.out.println(section);
+        System.out.println(studentName);
+        System.out.println(isTall);
+        System.out.println(num);
+    }
+}
+
+
+Exercise:
+
+public class App {
+    public static void main(String[] args) {
+        String name = "David Sdpt";
+        int age = 24;
+        float grade = 95.5f;
+        char blood = 'O';
+
+        System.out.println("Hi my name is " + name);
+        System.out.println("I'am " + age + " Years Old");
+        System.out.println("My GPA is " + grade);
+        System.out.println("My blood type is " + blood);
+    }
+}

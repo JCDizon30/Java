@@ -1,0 +1,12 @@
+public class NameFile {
+    public static void main(String[] args) {
+
+        // println = Use to print the codes Every line.
+        System.out.println("Hello");
+        System.out.println("World");
+
+        // print = Use to print the codes in One Line
+        System.out.print("Java ");
+        System.out.print("Fundamentals");
+    }
+}

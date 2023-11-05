@@ -1,0 +1,46 @@
+package javaTutorial;
+import java.util.Scanner;
+
+public class DSA {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        double x = s.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double y = s.nextDouble();
+
+        System.out.print("Enter the operation [+, -, *, /, %]: ");
+        char operator = s.next().charAt(0);
+
+        double result = 0;
+
+        switch (operator) {
+            case '+':
+                result = x + y;
+                break;
+            case '-':
+                result = x - y;
+                break;
+            case '*':
+                result = x * y;
+                break;
+            case '/':
+                if (y != 0) {
+                    result = x / y;
+                } 
+                break;
+            case '%':
+                if (y != 0) {
+                    result = x % y;
+                } 
+                break;
+            default:
+                System.out.println("Invalid Operators");
+                return;
+        }
+
+        System.out.println("Answer: " + result);
+    }
+}
