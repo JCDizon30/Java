@@ -1,0 +1,36 @@
+package javaTutorial;
+import java.util.*;
+
+public class Act3 {
+
+    public static void main(String[] args) {
+        Queue<String> customerQueue = new LinkedList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Customer Name: ");
+            String customerName = scanner.nextLine();
+            customerQueue.offer(customerName);
+        }
+
+        while (!customerQueue.isEmpty()) {
+            System.out.print("Queue: ");
+            for (String customer : customerQueue) {
+                System.out.print(customer + ", ");
+            }
+            System.out.println();
+
+            String currentCustomer = customerQueue.poll();
+
+            System.out.println("Now serving: " + currentCustomer);
+
+            if (!customerQueue.isEmpty()) {
+                System.out.println("Press Enter to call the next customer.");
+                scanner.nextLine();
+            }
+        }
+
+        System.out.println("All customers have been served, Queue is empty.");
+        scanner.close();
+    }
+}

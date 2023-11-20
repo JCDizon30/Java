@@ -1,0 +1,34 @@
+package javaTutorial;
+
+import java.util.*;
+
+public class DequeAct1 {
+    public static void main(String[] args) {
+        Queue<String> Names = new LinkedList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Provide Random 10 Names:");
+
+        for (int i = 0; i < 10; i++) {
+            String inputName = scanner.nextLine();
+            Names.add(inputName);
+        }
+
+        System.out.println("\nNames: " + Names);
+
+        String firstName = Names.remove();
+        System.out.println("Removed Name: " + firstName);
+        System.out.println("Updated Names: " + Names);
+
+        String frontName = Names.peek();
+        System.out.println("Front Name: " + frontName);
+
+        boolean isEmpty = Names.isEmpty();
+        System.out.println("Is the list empty? " + isEmpty);
+
+        int size = Names.size();
+        System.out.println("list size: " + size);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class DequeAct2 {
+    public static void main(String[] args) {
+        Queue<String> names = new LinkedList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Provide Random 10 Names:");
+
+        for (int i = 0; i < 10; i++) {
+            String inputName = scanner.nextLine();
+            names.add(inputName);
+        }
+
+        processQueue(names);
+
+        scanner.close();
+    }
+
+    private static void processQueue(Queue<String> names) {
+        System.out.println("\nNames: " + names);
+
+        for (int i = 0; i < 4; i++) {
+            String removedName = names.remove();
+            System.out.println("Removed Name: " + removedName);
+        }
+        
+        System.out.println("Updated Names: " + names);
+
+        String frontName = names.peek();
+        System.out.println("Front Name: " + frontName);
+        
+        int size = names.size();
+        System.out.println("List size: " + size);
+
+        boolean isEmpty = names.isEmpty();
+        System.out.println("Is the list empty? " + isEmpty);
+    }
+}
